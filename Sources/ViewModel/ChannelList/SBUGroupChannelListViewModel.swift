@@ -44,7 +44,7 @@ public protocol SBUGroupChannelListViewModelDelegate: SBUCommonViewModelDelegate
 open class SBUGroupChannelListViewModel: NSObject {
     // MARK: - Constants
     static let channelLoadLimit: UInt = 20
-    
+    public var let vivekArray:[Int] = []
     
     // MARK: - Property (Public)
     @SBUAtomic public private(set) var channelList: [GroupChannel] = []
